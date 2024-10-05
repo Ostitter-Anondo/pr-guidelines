@@ -97,7 +97,7 @@ function showArticle(articles, reqId){
         }
         else if (item[0] === "img"){
           img = document.createElement("img");
-          img.src = `https://raw.githubusercontent.com/Ostitter-Anondo/pr-articles-api/refs/heads/main/images/${article.id}/${img[1]}`;
+          img.src = `https://raw.githubusercontent.com/Ostitter-Anondo/pr-articles-api/refs/heads/main/images/${article.id}/${item[1]}`;
           articleBody.appendChild(img);
         }
       }
