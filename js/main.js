@@ -11,7 +11,7 @@ function showCards(articles, id) {
   if (id === "all-btn"){
     for (article of articles){
       let item = document.createElement("div");
-      item.classList.add("card", "bg-base-100", "w-96");
+      item.classList.add("card", "bg-base-100", "w-72", "md:w-96");
       item.innerHTML = `
         <div class="card-body">
           <h2 class="card-title">
@@ -32,7 +32,7 @@ function showCards(articles, id) {
     for (article of articles){
       if (article.type === "offline"){
       let item = document.createElement("div");
-      item.classList.add("card", "bg-base-100", "w-96");
+      item.classList.add("card", "bg-base-100", "w-72", "md:w-96");
       item.innerHTML = `
         <div class="card-body">
           <h2 class="card-title">
@@ -54,7 +54,7 @@ function showCards(articles, id) {
     for (article of articles){
       if (article.type === "online"){
         let item = document.createElement("div");
-        item.classList.add("card", "bg-base-100", "w-96");
+        item.classList.add("card", "bg-base-100", "w-72", "md:w-96");
         item.innerHTML = `
           <div class="card-body">
             <h2 class="card-title">
