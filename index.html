@@ -24,51 +24,58 @@
           </a>
         </div>
         <div class="navbar-end">
-          <a
-            href="#"
-            class="btn p-1 w-fit h-fit btn-ghost text-xl bg-white rounded-full"
-          >
-          <img class="h-10 w-10 rounded-full" src="assets/buccicon.jpg" alt=""/>
-        </a>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 -ml-36 w-52 p-2 shadow">
+              <li><a href="#basic">Basic Rules</a></li>
+              <li><a href="#summary">Summary Table</a></li>
+              <li><a href="#general">General Writing Style</a></li>
+              <li><a href="#bolding">Bolding Rules</a></li>
+              <li><a href="#photos">All Things Photo</a></li>
+              <li><a href="#placement">Photo Placement</a></li>
+              <li><a href="#volunteer">Volunteer List</a></li>
+              <li><a href="#additional">Additionaal Tips</a></li>
+              <li><a href="#process">The Process</a></li>
+              <li><a href="#samples">Samples</a></li>
+            </ul>
+          </div>
+        
         </div>
       </nav>
       <section
-        class="h-screen p-0 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/assets/bg-banner.jpg')] bg-gray-400 bg-blend-multiply"
+        class="h-screen pt-24 bg-cover bg-fixed bg-center bg-no-repeat bg-[url('/assets/bg-banner.jpg')] bg-gray-400 bg-blend-multiply"
       >
       <div class="hero h-full w-full mx-auto">
         <div class="hero-content flex-col lg:flex-row lg:w-10/12 lg:gap-32">
-          <div class="glass rounded-xl p-6 w-8/12 lg:w-1/2">
+          <div class="glass rounded-xl p-6 w-8/12">
             <h1 class="text-5xl text-primary font-bold">Guidelines for BUCC PR</h1>
             <p class="py-6 text-primary-content">
               Welcome to the <b>PRESS RELEASE and PUBLICATIONS Department</b> of <b>BRAC University Computer Club</b>. There are some basic Rules for PR Writing/Editing. Please check those out before writing a PR.
             </p>
             <a href="#main" class="btn btn-warning">Get Started</a>
           </div>
-          <div class="glass rounded-xl p-6 lg:w-1/2 text-secondary-content">
-            <h3 class="font-bold text-3xl">
-              For Writing and Editing
-            </h3>
-            <ul class="font-medium text-md list-inside list-disc">
-              <li>
-                Writing Rules
-              </li>
-              <li>
-                PR Process
-              </li>
-              <li>
-                Examples
-              </li>
-              <li>
-                Samples
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
       </section>
     </header>
     <main id="main">
-      <section id="basic" class="grid lg:grid-cols-9 place-items-center w-10/12 mx-auto gap-9 mt-12">
+      <hr id="basic" class="my-20 mx-6 border-base-100">
+      <section class="grid lg:grid-cols-9 place-items-center w-10/12 mx-auto gap-9 mt-12">
         <div class="lg:col-span-9">
           <h2 class="font-extrabold text-5xl text-primary">Basic Rules</h2>
         </div>
@@ -94,8 +101,8 @@
           <img src="assets/basics-3.jpg" alt="">
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="summary" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="summary" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <div>
           <h2 class="font-extrabold text-5xl text-primary">Summary Table</h2>
         </div>
@@ -131,8 +138,8 @@
           </table>
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="general" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="general" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <div>
           <h2 class="font-extrabold text-5xl text-primary">General Writing Style</h2>
         </div>
@@ -168,8 +175,8 @@
           </div>
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="bolding" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="bolding" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <div>
           <h2 class="font-extrabold text-5xl text-primary">Bolding Rules</h2>
         </div>
@@ -182,8 +189,8 @@
           </div>
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="photos" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="photos" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <div>
           <h2 class="font-extrabold text-5xl text-primary">All Things Photo</h2>
         </div>
@@ -215,8 +222,8 @@
           </div>
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="placement" class="grid grid-cols-2 auto-rows-max w-10/12 mx-auto gap-9 mt-12">
+      <hr id="placement" class="my-20 mx-6 border-cyan-500">
+      <section class="grid grid-cols-2 auto-rows-max w-10/12 mx-auto gap-9 mt-12">
         <div class="col-span-2 grid gap-6">
           <h2 class="font-extrabold text-5xl text-primary">Photo Placement</h2>
           <p class="text-lg">Regardless of the type of the picture, the placement should always be at the beginning of the PR. However, the placement will vary slightly based on whether it is a group photo or a photo of the speaker.</p>
@@ -230,8 +237,8 @@
           <img src="assets/placement-person.png" alt="">
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="volunteer" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="volunteer" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <h2 class="font-extrabold text-5xl text-primary">Volunteer List</h2>
         <p class="text-lg">A paragraph thanking the volunteers of the event should always be kept at the end of the PR. All of the names are to be bolded. The list of Volunteers should be collected from the members of HR and if possible. The names are to be included in separate lists in the last paragraph such as:</p>
         <div class="card card-normal bg-primary text-primary-content p-2 shadow">
@@ -240,8 +247,8 @@
           </div>
         </div>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="volunteer" class="grid grid-cols-2 w-10/12 mx-auto gap-9 mt-12">
+      <hr id="additional" class="my-20 mx-6 border-cyan-500">
+      <section class="grid grid-cols-2 w-10/12 mx-auto gap-9 mt-12">
         <h2 class="col-span-2 font-extrabold text-5xl text-primary">Additional Tips</h2>
         <ul class="grid row-span-2 list-disc gap-6 w-10/12 mx-auto">
           <li class="text-lg">
@@ -255,8 +262,8 @@
         <img src="assets/additional-1.jpg" alt="">
         <img src="assets/additional-2.jpg" alt="">
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
-      <section id="process" class="grid w-10/12 mx-auto gap-9 mt-12">
+      <hr id="process" class="my-20 mx-6 border-cyan-500">
+      <section class="grid w-10/12 mx-auto gap-9 mt-12">
         <h2 class="font-extrabold text-5xl text-primary">The Process</h2>
         <p class="text-lg">Since we are consistently trying to ensure that everything inside the PR department is being carried out in a systematic and efficient way, the following course of action is to be followed by anyone who might be supervising the PR of any given event.</p>
         <ul class="grid list-disc gap-6 w-10/12 mx-auto">
@@ -274,7 +281,7 @@
           </li>
         </ul>
       </section>
-      <hr class="my-12 mx-6 border-cyan-500">
+      <hr class="my-20 mx-6 border-cyan-500">
       <section id="samples" class="grid gap-9 w-10/12 mx-auto mt-12">
         <h2 class="font-extrabold text-5xl text-primary">Samples</h2>
         <div id="sample-cat" class="join mx-auto">
@@ -289,7 +296,12 @@
     </main>
     <footer class="footer bg-neutral text-neutral-content items-center p-8">
       <aside class="grid-flow-col gap-8 items-center">
-        <img src="assets/buccicon.jpg" class="w-10 h-10 rounded-full" alt="">
+        <a
+          href="https://www.bracucc.org/"
+          class="btn p-1 w-fit h-fit btn-ghost text-xl bg-white rounded-full"
+        >
+          <img class="h-10 w-10 rounded-full" src="assets/buccicon.jpg" alt=""/>
+        </a>
         <div class="flex flex-col gap-2">
           <p>Copyright © BUCC PR Team - All right reserved</p>
           <p>This website is based on <a class="underline" href="https://sanjib-sen.github.io/bucc-pr-rules/#/">the documentation created by Sanjib Kumar Sen</a> and  the <a class="underline" href="https://docs.google.com/document/d/1OMx4za9tSh4ucBmqUp8FRb5ZM88UY8SGS2yB23cAWLA/edit?usp=sharing">original PR Editing Rules</a></p>
